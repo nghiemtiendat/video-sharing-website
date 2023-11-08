@@ -1,0 +1,14 @@
+[{
+  "_id": {
+    "$oid": "643ed37ca27625233de0d059"
+  },
+  "max_size": 200,
+  "max_length": 30,
+  "max_quantity": 50,
+  "createdAt": {
+    "$date": "2021-10-20T11:05:45.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T01:55:47.791Z"
+  }
+}]

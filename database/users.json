@@ -1,0 +1,463 @@
+[{
+  "_id": {
+    "$oid": "64433b0fed8a4dae107de98a"
+  },
+  "username": "admin",
+  "password": "$2a$10$wqeQ.3udsvlK.VwbHJaLK.bwpoVDyzUPKuNH3X.Kj229VPaRfXi1m",
+  "full_name": "Admin Account",
+  "age": 20,
+  "gender": "Male",
+  "phone_number": "0868439451",
+  "email": "admin@gmail.com",
+  "address": "TP Hồ Chí Minh",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": true,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2020-03-10T01:40:31.098Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-22T01:40:31.098Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64433cdaed8a4dae107de993"
+  },
+  "username": "user01",
+  "password": "$2a$10$OwS5pgyGMnXyYYLaSLTLoelrpZZY47aRylvghhcNBtkI.72ae5FKK",
+  "full_name": "Võ Hoài An",
+  "age": 22,
+  "gender": "Male",
+  "phone_number": "0868439452",
+  "email": "vohoaian@gmail.com",
+  "address": "Hà Nội",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2021-06-12T01:48:10.086Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-01T01:48:10.086Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64433db5ed8a4dae107de996"
+  },
+  "username": "user02",
+  "password": "$2a$10$2QghRbMon9qHE8trEKf0fuVWwK21Fd1C8ls/yTSAKGxas/eDbdDYO",
+  "full_name": "Nguyễn Hoàng Anh",
+  "age": 18,
+  "gender": "Male",
+  "phone_number": "0868439453",
+  "email": "nguyenhoanganh@gmail.com",
+  "address": "Hải Phòng",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2022-09-08T01:51:49.416Z"
+  },
+  "updatedAt": {
+    "$date": "2023-01-16T01:51:49.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64433e57ed8a4dae107de999"
+  },
+  "username": "user03",
+  "password": "$2a$10$ITwKEHpXH9dzHG3/P1lROOSgzgkGfAYLBgx7jfFeAYDQBcLqVMBim",
+  "full_name": "Trần Ngọc Ánh",
+  "age": 25,
+  "gender": "Female",
+  "phone_number": "0868439454",
+  "email": "tranngocanh@gmail.com",
+  "address": "Đà Nẵng",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2020-11-22T01:54:31.484Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-17T01:54:31.484Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64433ef1ed8a4dae107de99c"
+  },
+  "username": "user04",
+  "password": "$2a$10$Ptj83bBmZCyAKGAQBim46e.iNleQ9/ETV6jLaR1jS2yZDjHSWBjWi",
+  "full_name": "Nguyễn Thanh Bình",
+  "age": 30,
+  "gender": "Male",
+  "phone_number": "0868439455",
+  "email": "nguyenthanhbinh@gmail.com",
+  "address": "Cần Thơ",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2022-01-03T01:57:05.596Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-20T01:57:05.596Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64433fb0ed8a4dae107de99f"
+  },
+  "username": "user05",
+  "password": "$2a$10$Eb3LcSqyp6N.0383xKqjkuaeme3Xc3UX.AYs13JYyIZZ1IuX2ADpi",
+  "full_name": "Lê Nghi Bình",
+  "age": 21,
+  "gender": "Female",
+  "phone_number": "0868439456",
+  "email": "lenghibinh@gmail.com",
+  "address": "Bắc Giang",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2020-01-02T02:00:16.119Z"
+  },
+  "updatedAt": {
+    "$date": "2022-08-19T02:00:16.119Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6443402eed8a4dae107de9a2"
+  },
+  "username": "user06",
+  "password": "$2a$10$f0cjkOb/5aKOlJoEhgOLDete7mI5auvY66smMeqdp.BBODeR76MIS",
+  "full_name": "Lê Anh Cường",
+  "age": 28,
+  "gender": "Male",
+  "phone_number": "0868439457",
+  "email": "leanhcuong@gmail.com",
+  "address": "Bình Dương",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2020-10-04T02:02:22.222Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-22T02:02:22.222Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64434108ed8a4dae107de9a5"
+  },
+  "username": "user07",
+  "password": "$2a$10$DV5uiwibSCnFQ/bkxA7itur6OsConm0vhzKNPPUIVNnWgaziY5.Ki",
+  "full_name": "Nguyễn Ngọc Châu",
+  "age": 26,
+  "gender": "Female",
+  "phone_number": "0868439458",
+  "email": "nguyenngocchau@gmail.com",
+  "address": "Quảng Nam",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2022-08-18T02:06:00.502Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-06T02:06:00.502Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64434195ed8a4dae107de9a8"
+  },
+  "username": "user08",
+  "password": "$2a$10$JizSzgjh1st7hBLAnQb..OGvf1N5AuzdrTEMubCrMIV6cDUNXd5wS",
+  "full_name": "Trịnh Văn Dũng",
+  "age": 19,
+  "gender": "Male",
+  "phone_number": "0868439459",
+  "email": "trinhvandung@gmail.com",
+  "address": "Hải Phòng",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2020-07-01T02:08:21.918Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-22T02:08:21.918Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64434218ed8a4dae107de9ab"
+  },
+  "username": "user09",
+  "password": "$2a$10$DptvsVhJutSUxUfWVWSr2.0FJ/G2.XeagZmJSTt6am1FYYWW4Oyya",
+  "full_name": "Trương Ngọc Diệp",
+  "age": 27,
+  "gender": "Female",
+  "phone_number": "0868439460",
+  "email": "truongngocdiep@gmail.com",
+  "address": "Kiên Giang",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2021-12-08T02:10:32.549Z"
+  },
+  "updatedAt": {
+    "$date": "2022-01-01T02:10:32.549Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64434256ed8a4dae107de9ae"
+  },
+  "username": "user10",
+  "password": "$2a$10$o1wmazbgPnK5XW41YjvRcOF.jin5sle3/yCeTAwHdiY./HtmsP4Bq",
+  "full_name": "Trần Thành Đạt",
+  "age": 16,
+  "gender": "Male",
+  "phone_number": "0868439461",
+  "email": "tranthanhdat@gmail.com",
+  "address": "Bạc Liêu",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2021-10-09T02:11:34.631Z"
+  },
+  "updatedAt": {
+    "$date": "2022-06-06T02:11:34.631Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6443432eed8a4dae107de9bc"
+  },
+  "username": "user11",
+  "password": "$2a$10$jPor3JJDtIYeP3aOhKyTEO/o1qN2ms4k/42BcESMBtkVkIMLe4N4e",
+  "full_name": "Nguyễn Tôn Điền",
+  "age": 22,
+  "gender": "Male",
+  "phone_number": "0868439462",
+  "email": "nguyentondien@gmail.com",
+  "address": "Bình Phước",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2022-05-11T02:15:10.783Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-19T02:15:10.783Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644343d2ed8a4dae107de9bf"
+  },
+  "username": "user12",
+  "password": "$2a$10$kUdVbi5CqFVZE11WL6VAwehncSPEx.Vemd/bKaAZwphWjCQ.eDcdi",
+  "full_name": "Phan Thanh Hằng",
+  "age": 27,
+  "gender": "Female",
+  "phone_number": "0868439463",
+  "email": "phanthanhhang@gmail.com",
+  "address": "Cà Mau",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2020-07-07T02:17:54.549Z"
+  },
+  "updatedAt": {
+    "$date": "2021-06-18T02:17:54.549Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64434444ed8a4dae107de9c2"
+  },
+  "username": "user13",
+  "password": "$2a$10$JC4Odq.RITwjdwwzrkLF9.95SOBMsAjGJP2hPzOVvCLAj1.EaAItW",
+  "full_name": "Phạm Xuân Hiển",
+  "age": 23,
+  "gender": "Other",
+  "phone_number": "0868439464",
+  "email": "phamxuanhien@gmail.com",
+  "address": "An Giang",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2021-03-07T02:19:48.221Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-01T02:19:48.221Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644344f6ed8a4dae107de9c5"
+  },
+  "username": "user14",
+  "password": "$2a$10$lhySiOPcRlzaTZxzV7CAMuFbdoroQjpDSZ1ACkyo0vZrNg/3prfJq",
+  "full_name": "Nguyễn Hương Giang",
+  "age": 25,
+  "gender": "Other",
+  "phone_number": "0868439465",
+  "email": "nguyenhuonggiang@gmail.com",
+  "address": "TP Hồ Chí Minh",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2022-12-06T02:22:46.543Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-01T02:22:46.543Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64434587ed8a4dae107de9c8"
+  },
+  "username": "user15",
+  "password": "$2a$10$keeyncryxGtQsrBK2FAsW.NJJfgwRlQOLhgsO/kfy2qexbwH84yaO",
+  "full_name": "Đỗ Trung Kiên",
+  "age": 20,
+  "gender": "Male",
+  "phone_number": "0868439466",
+  "email": "dotrungkien@gmail.com",
+  "address": "Thừa Thiên Huế",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2020-02-03T02:25:11.607Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-17T02:25:11.607Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64434605ed8a4dae107de9cb"
+  },
+  "username": "user16",
+  "password": "$2a$10$7lg37btrQ6CDDx/j2Ykcqu4Qk5ye8Jp/XwZj0o4qsAUUKyjol.Ree",
+  "full_name": "Võ Thanh Khương",
+  "age": 35,
+  "gender": "Male",
+  "phone_number": "0868439467",
+  "email": "vothanhkhuong@gmail.com",
+  "address": "Phú Quốc",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2021-09-08T02:27:17.093Z"
+  },
+  "updatedAt": {
+    "$date": "2022-07-10T02:27:17.093Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64434687ed8a4dae107de9ce"
+  },
+  "username": "user17",
+  "password": "$2a$10$soUTpAAEH2JmCEdf//pcmePub5JUj8/NS/cglCdPBxjGe6c0jMTL2",
+  "full_name": "Trịnh Tấn Lợi",
+  "age": 27,
+  "gender": "Other",
+  "phone_number": "0868439468",
+  "email": "trinhtanloi@gmail.com",
+  "address": "Bình Thuận",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": true,
+  "createdAt": {
+    "$date": "2022-12-08T02:29:27.220Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-06T02:29:27.220Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644346e4ed8a4dae107de9d1"
+  },
+  "username": "user18",
+  "password": "$2a$10$W28RdN1kfC7i9MpZCIUB6eNEwBZQOcsvAU1uVicYnsZbepYXSc/UO",
+  "full_name": "Nguyễn Kim Liên",
+  "age": 24,
+  "gender": "Female",
+  "phone_number": "0868439469",
+  "email": "nguyenkimlien@gmail.com",
+  "address": "Hà Giang",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": false,
+  "createdAt": {
+    "$date": "2019-05-05T02:31:00.741Z"
+  },
+  "updatedAt": {
+    "$date": "2022-09-28T02:31:00.741Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64434744ed8a4dae107de9d5"
+  },
+  "username": "user19",
+  "password": "$2a$10$SJyKEClvgmXIDcGjaK2h7.2sh7hmBK66p09Qg3Y19tB8lZywz2OHW",
+  "full_name": "Nguyễn Văn Mạnh",
+  "age": 26,
+  "gender": "Male",
+  "phone_number": "0868439470",
+  "email": "nguyenvanmanh@gmail.com",
+  "address": "Bà Rịa Vũng Tàu",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": false,
+  "createdAt": {
+    "$date": "2019-10-07T02:32:36.054Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-01T02:32:36.054Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644347d7ed8a4dae107de9d8"
+  },
+  "username": "user20",
+  "password": "$2a$10$VkGONCCpofBZJFLC8IF1pOQyg73d.ZLFqJ57zbkxrRyH5ooy2QeaS",
+  "full_name": "Nguyễn Trọng Nhân",
+  "age": 27,
+  "gender": "Other",
+  "phone_number": "0868439471",
+  "email": "nguyentrongnhan@gmail.com",
+  "address": "Nghệ An",
+  "avatar": "/img/avatar/root.jpg",
+  "is_admin": false,
+  "is_active": false,
+  "createdAt": {
+    "$date": "2021-03-12T02:35:03.582Z"
+  },
+  "updatedAt": {
+    "$date": "2021-04-22T02:35:03.582Z"
+  },
+  "__v": 0
+}]

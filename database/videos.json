@@ -1,0 +1,1128 @@
+[{
+  "_id": {
+    "$oid": "642037f0356be831dc5edaea"
+  },
+  "user_id": {
+    "$oid": "64433cdaed8a4dae107de993"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac82e"
+  },
+  "title": "Tôi đã khám phá AMAZON RAINFOREST trong 100 giờ",
+  "description": " Đưa phim của bạn lên một tầm cao mới với âm nhạc từ Musicbed. Sử dụng mã phiếu giảm giá LEXIELIMITLESS khi thanh toán để nhận 1 tháng miễn phí khi mua đăng ký hàng năm: http: //share.mscbd.fm/LexieLimitless",
+  "url": "https://www.youtube.com/embed/9UjK5jC8T5U",
+  "thumbnail": "https://img.youtube.com/vi/9UjK5jC8T5U/0.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": false,
+  "createdAt": {
+    "$date": "2022-06-08T08:52:47.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-01-04T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64203800356be831dc5edaeb"
+  },
+  "user_id": {
+    "$oid": "64433db5ed8a4dae107de996"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac82f"
+  },
+  "title": "Ye Kaha Pohoch Gaye ?😲 Adventure Park",
+  "description": "I hope you enjoyed this video",
+  "url": "https://www.youtube.com/embed/LQ7km_HYECQ",
+  "thumbnail": "https://img.youtube.com/vi/LQ7km_HYECQ/0.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": false,
+  "createdAt": {
+    "$date": "2021-05-10T09:22:15.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-18T15:24:29.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6420380b356be831dc5edaec"
+  },
+  "user_id": {
+    "$oid": "64433e57ed8a4dae107de999"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac830"
+  },
+  "title": "New Funny and Fail Videos 2023 😂 Cutest People Doing Funny Things 😺😍 Part 33",
+  "description": "Hi my friends, please check our new compilation. Here is moments people funny videos and we hope that this video make your life more fun & you enjoy it ",
+  "url": "https://www.youtube.com/embed/B8rvh6r8MWQ",
+  "thumbnail": "https://img.youtube.com/vi/B8rvh6r8MWQ/0.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": false,
+  "createdAt": {
+    "$date": "2020-02-25T11:34:28.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-09-07T16:31:48.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64203815356be831dc5edaed"
+  },
+  "user_id": {
+    "$oid": "64433ef1ed8a4dae107de99c"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac831"
+  },
+  "title": "Drama Video",
+  "description": "Drama video description",
+  "url": "https://www.youtube.com/embed/9UjK5jC8T5U",
+  "thumbnail": "https://img.youtube.com/vi/9UjK5jC8T5U/0.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": false,
+  "createdAt": {
+    "$date": "2020-10-14T18:49:12.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-06-21T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6420382e356be831dc5edaee"
+  },
+  "user_id": {
+    "$oid": "64433fb0ed8a4dae107de99f"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac832"
+  },
+  "title": "Korean Mix Hindi Songs 💗 Korean Drama 💗 Korean Lover Story 💗 Chinese Lover Story Songs",
+  "description": "Korean Mix Hindi Songs 💗 Korean Drama 💗 Korean Lover Story 💗 Chinese Love Story Song 💗 Dheeraj Kataria ",
+  "url": "https://www.youtube.com/embed/KQdU7PbMbbE",
+  "thumbnail": "https://img.youtube.com/vi/KQdU7PbMbbE/0.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": false,
+  "createdAt": {
+    "$date": "2021-07-16T10:54:06.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-01T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6420387b356be831dc5edaef"
+  },
+  "user_id": {
+    "$oid": "6443402eed8a4dae107de9a2"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac833"
+  },
+  "title": "BLACKPINK: LIGHT UP THE SKY | Official Trailer | Netflix",
+  "description": "Record-shattering Korean girl band BLACKPINK tell their story — and detail the hard-fought journey of the dreams and trials behind their meteoric rise.",
+  "url": "https://www.youtube.com/embed/7jx_vdvxWu0",
+  "thumbnail": "https://img.youtube.com/vi/7jx_vdvxWu0/0.jpg",
+  "is_private": true,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2020-04-20T12:54:06.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-12-24T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64203887356be831dc5edaf0"
+  },
+  "user_id": {
+    "$oid": "64434108ed8a4dae107de9a5"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac834"
+  },
+  "title": "Bài hát mới của Alan Walker (Remix) - Video Nhạc Hoạt Hình Cảm Động Nhất",
+  "description": "Animation video description",
+  "url": "https://www.youtube.com/embed/ha5Xm1GkX60",
+  "thumbnail": "https://img.youtube.com/vi/ha5Xm1GkX60/0.jpg",
+  "is_private": true,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-02-28T14:20:47.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-01-14T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64203893356be831dc5edaf1"
+  },
+  "user_id": {
+    "$oid": "64434195ed8a4dae107de9a8"
+  },
+  "category_id": {
+    "$oid": "64201810923812bb31fe3b97"
+  },
+  "title": "GIÓ - JANK | OFFICIAL MUSIC VIDEO | VALENTINE 2023",
+  "description": "Cảm ơn các bạn đã xem MV. Hãy SUBSCRIBE và COMMENT để ủng hộ N2L MUSIC  làm nhiều MV hay hơn.",
+  "url": "https://www.youtube.com/embed/igoE062z76U",
+  "thumbnail": "https://img.youtube.com/vi/igoE062z76U/0.jpg",
+  "is_private": true,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-01-10T10:00:00.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-08-03T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6420389d356be831dc5edaf2"
+  },
+  "user_id": {
+    "$oid": "64434195ed8a4dae107de9a8"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac834"
+  },
+  "title": "Kids vocabulary - Drinks - Learn English for kids - English educational video",
+  "description": "Thanks for checking out the English Singsing",
+  "url": "https://www.youtube.com/embed/A_AJrtGtC3Y",
+  "thumbnail": "https://img.youtube.com/vi/A_AJrtGtC3Y/0.jpg",
+  "is_private": true,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-08-13T15:30:28.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-27T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642038a7356be831dc5edaf3"
+  },
+  "user_id": {
+    "$oid": "64434195ed8a4dae107de9a8"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac837"
+  },
+  "title": "Funniest Moments in Football",
+  "description": "TURN ON NOTIFICATIONS TO NEVER MISS AN UPLOAD!",
+  "url": "https://www.youtube.com/embed/OQM-6yVKy-I",
+  "thumbnail": "https://img.youtube.com/vi/OQM-6yVKy-I/0.jpg",
+  "is_private": true,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2020-05-18T16:34:10.000Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-08T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64204024356be831dc5edb13"
+  },
+  "user_id": {
+    "$oid": "64434195ed8a4dae107de9a8"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac82e"
+  },
+  "title": "TINH VÕ MÔN - LÝ TIỂU LONG PARODY | ACTION C",
+  "description": "Nếu trong khi xem clip có xuất hiện quảng cáo, mong mọi người hãy xem hoặc click quảng cáo để ủng hộ team của mình. Cảm ơn mọi người rất nhiều",
+  "url": "https://www.youtube.com/embed/UBoKn7VfEyw",
+  "thumbnail": "https://img.youtube.com/vi/UBoKn7VfEyw/0.jpg",
+  "is_private": false,
+  "is_feature": true,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-06-25T08:42:39.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-01-05T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64204031356be831dc5edb14"
+  },
+  "user_id": {
+    "$oid": "64434195ed8a4dae107de9a8"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac82f"
+  },
+  "title": "Giant Wolf Attack Scene - Wolf vs Helicopter - Rampage (2018) Movie Clip HD",
+  "description": "TM & © Warner Bros. (2018)",
+  "url": "https://www.youtube.com/embed/L31X2fumyY4",
+  "thumbnail": "https://img.youtube.com/vi/L31X2fumyY4/0.jpg",
+  "is_private": false,
+  "is_feature": true,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2020-09-07T22:08:03.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-08-12T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6420403c356be831dc5edb15"
+  },
+  "user_id": {
+    "$oid": "64434218ed8a4dae107de9ab"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac830"
+  },
+  "title": "Comedy Video",
+  "description": "Hi my friends, please check our new compilation",
+  "url": "https://www.youtube.com/embed/B8rvh6r8MWQ&t=74s",
+  "thumbnail": "https://img.youtube.com/vi/B8rvh6r8MWQ/0.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-11-18T10:29:59.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-22T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64204046356be831dc5edb16"
+  },
+  "user_id": {
+    "$oid": "64434218ed8a4dae107de9ab"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac831"
+  },
+  "title": "Toàn Cảnh Drama Clip 4 phút Trâm Anh Pew Pew bất ngờ lên tiếng Em Vẫn Ổn",
+  "description": "Drama video chỉ có tính chất giải trí.",
+  "url": "https://www.youtube.com/embed/nzHyETgbLIU",
+  "thumbnail": "https://img.youtube.com/vi/nzHyETgbLIU/0.jpg",
+  "is_private": false,
+  "is_feature": true,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-01-20T16:07:56.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-09T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6420404e356be831dc5edb17"
+  },
+  "user_id": {
+    "$oid": "64434218ed8a4dae107de9ab"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac832"
+  },
+  "title": "Horror Video",
+  "description": "Horror video description",
+  "url": "https://www.youtube.com/embed/etp09KA7jGw",
+  "thumbnail": "https://img.youtube.com/vi/etp09KA7jGw/0.jpg",
+  "is_private": false,
+  "is_feature": true,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2020-12-11T11:30:14.000Z"
+  },
+  "updatedAt": {
+    "$date": "2022-11-15T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6420407b356be831dc5edb19"
+  },
+  "user_id": {
+    "$oid": "64434218ed8a4dae107de9ab"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac835"
+  },
+  "title": "New Songs EDM Mix - Alan Walker EDM Animation Music Videos - GMV Music",
+  "description": "New Songs EDM Mix - Alan Walker EDM Animation Music Videos - GMV Music",
+  "url": "https://www.youtube.com/embed/ubOShDUuaSM",
+  "thumbnail": "https://img.youtube.com/vi/ubOShDUuaSM/0.jpg",
+  "is_private": false,
+  "is_feature": true,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-06-07T14:53:29.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-27T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64204089356be831dc5edb1a"
+  },
+  "user_id": {
+    "$oid": "64434218ed8a4dae107de9ab"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac835"
+  },
+  "title": "VỀ VỚI EM - VÕ HẠ TRÂM | OFFICIAL MUSIC VIDEO | THE LOVE JOURNEY",
+  "description": "Email: vohatramofficial@gmail.com",
+  "url": "https://www.youtube.com/embed/caoxaO_nKFU",
+  "thumbnail": "https://img.youtube.com/vi/caoxaO_nKFU/0.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-10-06T07:20:59.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-23T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64204090356be831dc5edb1b"
+  },
+  "user_id": {
+    "$oid": "64434256ed8a4dae107de9ae"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac836"
+  },
+  "title": "Education For Life ⭐ Short Film",
+  "description": "Together, we strive to promote lifelong learning opportunities to help break the cycle of poverty. ",
+  "url": "https://www.youtube.com/embed/vdMPP47nLhc",
+  "thumbnail": "https://img.youtube.com/vi/vdMPP47nLhc/0.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-08-30T13:47:07.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-20T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6420409a356be831dc5edb1c"
+  },
+  "user_id": {
+    "$oid": "64434256ed8a4dae107de9ae"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac837"
+  },
+  "title": "Amazing Sports Motivation - Just Do It!",
+  "description": "Motivational and Inspirational Sports Video",
+  "url": "https://www.youtube.com/embed/ZlfKYEG-eXk",
+  "thumbnail": "https://img.youtube.com/vi/ZlfKYEG-eXk/0.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-12-28T17:08:17.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-18T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642040b0356be831dc5edb1d"
+  },
+  "user_id": {
+    "$oid": "6443432eed8a4dae107de9bc"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac82e"
+  },
+  "title": "WARLIKE - Action Short Film",
+  "description": "WARLIKE - Action Short Film",
+  "url": "https://www.youtube.com/embed/SLStk36wLZc",
+  "thumbnail": "https://img.youtube.com/vi/SLStk36wLZc/0.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-02-27T08:01:43.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-10T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642040b6356be831dc5edb1e"
+  },
+  "user_id": {
+    "$oid": "6443432eed8a4dae107de9bc"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac82f"
+  },
+  "title": "Bali Adventure - Mikevisuals",
+  "description": "Stay tuned for our Hong Kong adventure, coming soon...",
+  "url": "https://www.youtube.com/embed/ibuUmMhD2Pg",
+  "thumbnail": "https://img.youtube.com/vi/ibuUmMhD2Pg/0.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-02-22T09:16:01.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-28T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642040bf356be831dc5edb1f"
+  },
+  "user_id": {
+    "$oid": "644343d2ed8a4dae107de9bf"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac830"
+  },
+  "title": "Must Watch Eid Special New Comedy Video 2023 Amazing Funny Video 2023 Episode 209 By Busy Fun Ltd",
+  "description": "This is a funny videos channel. We make funny videos in our village. Because We are live in village.",
+  "url": "https://www.youtube.com/embed/MIA8ZKhgdh8",
+  "thumbnail": "https://img.youtube.com/vi/MIA8ZKhgdh8/0.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-01-02T04:39:52.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-06T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642040c6356be831dc5edb20"
+  },
+  "user_id": {
+    "$oid": "644343d2ed8a4dae107de9bf"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac831"
+  },
+  "title": "Korean Mix Hindi Songs Korean Drama Korean Lover Story Chinese Lover Story Songs Kpop",
+  "description": "orean Mix Hindi Songs 💗 Korean Drama 💗 Korean Lover Story 💗 Chinese Love Story Song 💗 Dheeraj Kataria ",
+  "url": "https://www.youtube.com/embed/afSHbnHFvmc",
+  "thumbnail": "https://img.youtube.com/vi/afSHbnHFvmc/0.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-03-15T23:18:05.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-21T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642040ce356be831dc5edb21"
+  },
+  "user_id": {
+    "$oid": "64434444ed8a4dae107de9c2"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac832"
+  },
+  "title": "A Bus Stop Horror Story Animated",
+  "description": "A Bus Stop Horror Story Animated",
+  "url": "https://www.youtube.com/embed/V5OqRhZoRpA",
+  "thumbnail": "https://img.youtube.com/vi/V5OqRhZoRpA/0.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-05-17T12:59:34.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-16T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642040e1356be831dc5edb22"
+  },
+  "user_id": {
+    "$oid": "64434444ed8a4dae107de9c2"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac833"
+  },
+  "title": "Grizzly Man (2005) Official Trailer - Werner Herzog Documentary HD",
+  "description": "Documentary video description",
+  "url": "/video/video026.mp4",
+  "thumbnail": "/img/thumbnail/video026.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-03-12T15:27:48.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-26T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642040ea356be831dc5edb23"
+  },
+  "user_id": {
+    "$oid": "644344f6ed8a4dae107de9c5"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac834"
+  },
+  "title": "Mưa - Phim hoạt hình Animation Việt Nam",
+  "description": "Mưa - Phim hoạt hình Animation Việt Nam",
+  "url": "/video/video027.mp4",
+  "thumbnail": "/img/thumbnail/video027.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-09-24T18:04:11.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-12T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642040f3356be831dc5edb24"
+  },
+  "user_id": {
+    "$oid": "644344f6ed8a4dae107de9c5"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac835"
+  },
+  "title": "Hoàng Thuỳ Linh - See Tình | Official Music Video",
+  "description": "Và đừng quên hãy đăng ký/theo dõi kênh YouTube chính thức của Hoàng Thùy Linh qua link sau: http://bit.ly/2z3Knls",
+  "url": "/video/video028.mp4",
+  "thumbnail": "/img/thumbnail/video028.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-06-11T09:51:27.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-15T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642040fb356be831dc5edb25"
+  },
+  "user_id": {
+    "$oid": "64434587ed8a4dae107de9c8"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac836"
+  },
+  "title": "Inspirational Video - You can be a hero too",
+  "description": "inspirational videos about life, helping homeless, when it's not your time, be a hero, how to be a hero, human heroes, real life heroes",
+  "url": "/video/video029.mp4",
+  "thumbnail": "/img/thumbnail/video029.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-02-10T05:29:16.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-17T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64204104356be831dc5edb26"
+  },
+  "user_id": {
+    "$oid": "64434587ed8a4dae107de9c8"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac837"
+  },
+  "title": "Funniest Moments in Football",
+  "description": "URN ON NOTIFICATIONS TO NEVER MISS AN UPLOAD!",
+  "url": "/video/video030.mp4",
+  "thumbnail": "/img/thumbnail/video030.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-04-05T13:07:52.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-13T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6420413c356be831dc5edb27"
+  },
+  "user_id": {
+    "$oid": "64434605ed8a4dae107de9cb"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac82e"
+  },
+  "title": "San Andreas (2015) - Tsunami Scene - Pure Action [4K]",
+  "description": "TURN NOTIFICATIONS ON",
+  "url": "/video/video031.mp4",
+  "thumbnail": "/img/thumbnail/video031.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-07-14T20:18:56.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-11T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64204147356be831dc5edb28"
+  },
+  "user_id": {
+    "$oid": "64434605ed8a4dae107de9cb"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac831"
+  },
+  "title": "Jealousy Boyfriend/High School Love/Qihe Maskman Love❤️🔥",
+  "description": "không có",
+  "url": "/video/video032.mp4",
+  "thumbnail": "/img/thumbnail/video032.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-09-20T04:36:12.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-19T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64204155356be831dc5edb29"
+  },
+  "user_id": {
+    "$oid": "64434687ed8a4dae107de9ce"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac832"
+  },
+  "title": "उसके पास जाना पड़ा भारी 😱|Horror video|scary video|real ghost story|ScaryField",
+  "description": "Title : Anxiety - Madness Paranoia by Kevin MacLeod ",
+  "url": "/video/video033.mp4",
+  "thumbnail": "/img/thumbnail/video033.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-01-05T08:11:40.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-07T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64204161356be831dc5edb2a"
+  },
+  "user_id": {
+    "$oid": "64434687ed8a4dae107de9ce"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac833"
+  },
+  "title": "Phim tài liệu lịch sử đầu tiên của Trung Quốc",
+  "description": "không có",
+  "url": "/video/video034.mp4",
+  "thumbnail": "/img/thumbnail/video034.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-02-21T10:55:18.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-22T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64204171356be831dc5edb2b"
+  },
+  "user_id": {
+    "$oid": "644346e4ed8a4dae107de9d1"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac836"
+  },
+  "title": "Clip Cảm Động-Nghề giáo",
+  "description": "Các bạn ủng hộ mình bằng cách like video này và nhớ subscribe kênh mình với nha....",
+  "url": "/video/video035.mp4",
+  "thumbnail": "/img/thumbnail/video035.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-08-17T02:46:31.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-28T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6420417a356be831dc5edb2c"
+  },
+  "user_id": {
+    "$oid": "644346e4ed8a4dae107de9d1"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac837"
+  },
+  "title": "NOTT'M FOREST - MAN UNITED: DẤU ẤN MANG TÊN ANTONY, QUỶ ĐỎ BỨT TỐC | NGOẠI HẠNG ANH 22/23",
+  "description": "👉 Đừng bỏ lỡ!! Ưu đãi chỉ áp dụng thứ 6-7-CN hàng tuần tới hết 30/4.",
+  "url": "/video/video036.mp4",
+  "thumbnail": "/img/thumbnail/video036.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-03-05T14:28:43.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-24T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6420418e356be831dc5edb2d"
+  },
+  "user_id": {
+    "$oid": "64434744ed8a4dae107de9d5"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac837"
+  },
+  "title": "Những hành động xứng đáng triệu like",
+  "description": "Action video description",
+  "url": "/video/video037.mp4",
+  "thumbnail": "/img/thumbnail/video037.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-02-13T18:09:27.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-23T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64204197356be831dc5edb2e"
+  },
+  "user_id": {
+    "$oid": "64434744ed8a4dae107de9d5"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac82e"
+  },
+  "title": "PARKOUR NGUY HIỂM. YẾU TIM ĐỪNG XEM !! ĐĨNH CŨA ĐĨNH",
+  "description": "PARKOUR NGUY HIỂM. YẾU TIM ĐỪNG XEM !! ĐĨNH CŨA ĐĨNH",
+  "url": "/video/video038.mp4",
+  "thumbnail": "/img/thumbnail/video038.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-11-09T23:07:14.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-15T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6420419f356be831dc5edb2f"
+  },
+  "user_id": {
+    "$oid": "644347d7ed8a4dae107de9d8"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac830"
+  },
+  "title": "Cười Sảng Khoái Với Những Khoảnh Khắc Vui Nhộn Hài Hước Và Lầy Lội Nhất P22",
+  "description": "Cười Sảng Khoái Với Những Khoảnh Khắc Vui Nhộn Hài Hước Và Lầy Lội Nhất P22",
+  "url": "/video/video039.mp4",
+  "thumbnail": "/img/thumbnail/video039.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-01-02T09:14:51.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-20T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642041a8356be831dc5edb30"
+  },
+  "user_id": {
+    "$oid": "644347d7ed8a4dae107de9d8"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac830"
+  },
+  "title": "Kịch “Vợ nhặt” - A11K53",
+  "description": "Đây không phải là một vở kịch hoàn hảo, không có kịch bản xuất sắc, diễn viên không chuyên, âm thanh không chỉn chu. Đây chỉ là một vở kịch do chúng mình - những học sinh cấp 3 ",
+  "url": "/video/video040.mp4",
+  "thumbnail": "/img/thumbnail/video040.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-12-19T01:42:06.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-16T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642041b3356be831dc5edb31"
+  },
+  "user_id": {
+    "$oid": "644347d7ed8a4dae107de9d8"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac832"
+  },
+  "title": "Scary Videos I Found On Tiktok SMILE IF YOU CAN (PART 10)",
+  "description": "Don't forget to Like and Subscribe to TIKTOK HORROR CLIPS. Hit the notification bell so you won't miss any of my upcoming videos.",
+  "url": "/video/video041.mp4",
+  "thumbnail": "/img/thumbnail/video041.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-02-20T07:38:52.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-22T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642041be356be831dc5edb32"
+  },
+  "user_id": {
+    "$oid": "64434744ed8a4dae107de9d5"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac833"
+  },
+  "title": "Có Lẽ Đây Là Đoạn Phim Chiến Tranh Việt Nam Hay Nhất Từng Được Chiếu - Không Xem Cực Phí",
+  "description": "Có Lẽ Đây Là Đoạn Phim Chiến Tranh Việt Nam Hay Nhất Từng Được Chiếu - Không Xem Cực Phí",
+  "url": "/video/video042.mp4",
+  "thumbnail": "/img/thumbnail/video042.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-10-15T06:32:02.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-19T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642041ca356be831dc5edb33"
+  },
+  "user_id": {
+    "$oid": "644346e4ed8a4dae107de9d1"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac834"
+  },
+  "title": "Phim hoạt hình ngắn-Hài hước",
+  "description": "Mọi người xem video nhớ like và đăng kí kênh để theo dõi nhưng video mới nhất",
+  "url": "/video/video043.mp4",
+  "thumbnail": "/img/thumbnail/video043.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-12-26T11:16:18.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-17T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642041d7356be831dc5edb34"
+  },
+  "user_id": {
+    "$oid": "64434687ed8a4dae107de9ce"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac835"
+  },
+  "title": "EM ĐỒNG Ý (I DO) - ĐỨC PHÚC x 911 x KHẮC HƯNG | OFFICIAL MUSIC VIDEO | VALENTINE 2023",
+  "description": "Camera & Lighting Equipment: TL EQUIPMENT CATERING: HBM CATERING",
+  "url": "/video/video044.mp4",
+  "thumbnail": "/img/thumbnail/video044.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-11-23T02:03:59.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-14T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642041df356be831dc5edb35"
+  },
+  "user_id": {
+    "$oid": "64434605ed8a4dae107de9cb"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac836"
+  },
+  "title": "Vì sao Phần Lan có nền giáo dục đứng đầu thế giới",
+  "description": "Educational video description",
+  "url": "/video/video045.mp4",
+  "thumbnail": "/img/thumbnail/video045.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-03-13T16:57:05.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-21T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642041e8356be831dc5edb36"
+  },
+  "user_id": {
+    "$oid": "64434587ed8a4dae107de9c8"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac837"
+  },
+  "title": "Video giới thiệu một số môn thể thao",
+  "description": "không có",
+  "url": "/video/video046.mp4",
+  "thumbnail": "/img/thumbnail/video046.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-01-01T08:15:20.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-12T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642041f1356be831dc5edb37"
+  },
+  "user_id": {
+    "$oid": "644344f6ed8a4dae107de9c5"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac82e"
+  },
+  "title": "LÃNG KHÁCH | RONIN | Phim hành động hài Việt Nam | Action C",
+  "description": "LÃNG KHÁCH | RONIN | Phim hành động hài Việt Nam | Action C",
+  "url": "/video/video047.mp4",
+  "thumbnail": "/img/thumbnail/video047.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-02-25T20:03:45.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-11T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "642041f8356be831dc5edb38"
+  },
+  "user_id": {
+    "$oid": "64434444ed8a4dae107de9c2"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac82f"
+  },
+  "title": "Rơi từ tầng 62 xuống đất khi đang làm clip mạo hiểm để kiếm tiền chữa bệnh cho mẹ",
+  "description": "Nam diễn viên Ngô Vịnh Ninh người Trung Quốc qua đời vào tháng 11 vừa qua. Tuy nhiên mới đây bạn gái của anh mới tiết lộ thông tin này.",
+  "url": "/video/video048.mp4",
+  "thumbnail": "/img/thumbnail/video048.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-02-02T17:58:22.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-09T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "64204202356be831dc5edb39"
+  },
+  "user_id": {
+    "$oid": "644343d2ed8a4dae107de9bf"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac834"
+  },
+  "title": "ARMCHAIR Bean | Funny Clips | Mr Bean Official",
+  "description": "Mr Bean finds an innovative way to get his armchair home from the sale...",
+  "url": "/video/video049.mp4",
+  "thumbnail": "/img/thumbnail/video049.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2022-02-08T14:26:30.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-06T21:19:17.000Z"
+  }
+},{
+  "_id": {
+    "$oid": "6420420a356be831dc5edb3a"
+  },
+  "user_id": {
+    "$oid": "6443432eed8a4dae107de9bc"
+  },
+  "category_id": {
+    "$oid": "643f3aa2ff9bfa51deeac834"
+  },
+  "title": "Cười Sảng Khoái Với Những Khoảnh Khắc Vui Nhộn Hài Hước Và Lầy Lội Nhất",
+  "description": "Cười Sảng Khoái Với Những Khoảnh Khắc Vui Nhộn Hài Hước Và Lầy Lội Nhất, ",
+  "url": "/video/video050.mp4",
+  "thumbnail": "/img/thumbnail/video050.jpg",
+  "is_private": false,
+  "is_feature": false,
+  "is_checked": true,
+  "createdAt": {
+    "$date": "2021-12-29T10:47:03.000Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-03T21:19:17.000Z"
+  }
+}]

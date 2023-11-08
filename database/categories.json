@@ -1,0 +1,121 @@
+[{
+  "_id": {
+    "$oid": "643f3aa2ff9bfa51deeac82e"
+  },
+  "name": "Action",
+  "content": "Hành động",
+  "createdAt": {
+    "$date": "2020-04-10T05:24:22.530Z"
+  },
+  "updatedAt": {
+    "$date": "2022-10-22T05:24:22.530Z"
+  }
+},{
+  "_id": {
+    "$oid": "643f3aa2ff9bfa51deeac82f"
+  },
+  "name": "Adventure",
+  "content": "Khám phá",
+  "createdAt": {
+    "$date": "2021-12-03T05:26:02.101Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-28T05:26:02.101Z"
+  }
+},{
+  "_id": {
+    "$oid": "643f3aa2ff9bfa51deeac830"
+  },
+  "name": "Comedy",
+  "content": "Hài kịch",
+  "createdAt": {
+    "$date": "2019-05-16T06:07:29.945Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-21T06:10:08.196Z"
+  }
+},{
+  "_id": {
+    "$oid": "643f3aa2ff9bfa51deeac831"
+  },
+  "name": "Drama",
+  "content": "Phim",
+  "createdAt": {
+    "$date": "2018-01-01T06:07:53.055Z"
+  },
+  "updatedAt": {
+    "$date": "2023-03-17T06:07:53.055Z"
+  }
+},{
+  "_id": {
+    "$oid": "643f3aa2ff9bfa51deeac832"
+  },
+  "name": "Horror",
+  "content": "Kinh dị",
+  "createdAt": {
+    "$date": "2019-11-02T06:08:18.366Z"
+  },
+  "updatedAt": {
+    "$date": "2019-12-24T06:08:18.366Z"
+  }
+},{
+  "_id": {
+    "$oid": "643f3aa2ff9bfa51deeac833"
+  },
+  "name": "Documentary",
+  "content": "Tài liệu",
+  "createdAt": {
+    "$date": "2022-01-30T06:08:35.526Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-10T06:08:35.526Z"
+  }
+},{
+  "_id": {
+    "$oid": "643f3aa2ff9bfa51deeac834"
+  },
+  "name": "Animation",
+  "content": "Hoạt hình",
+  "createdAt": {
+    "$date": "2019-09-07T06:08:57.452Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-22T06:08:57.452Z"
+  }
+},{
+  "_id": {
+    "$oid": "643f3aa2ff9bfa51deeac835"
+  },
+  "name": "Music",
+  "content": "Âm nhạc",
+  "createdAt": {
+    "$date": "2023-04-10T06:09:09.007Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-10T06:09:09.007Z"
+  }
+},{
+  "_id": {
+    "$oid": "643f3aa2ff9bfa51deeac836"
+  },
+  "name": "Education",
+  "content": "Giáo dục",
+  "createdAt": {
+    "$date": "2021-10-07T06:09:32.367Z"
+  },
+  "updatedAt": {
+    "$date": "2022-05-05T06:09:32.367Z"
+  }
+},{
+  "_id": {
+    "$oid": "643f3aa2ff9bfa51deeac837"
+  },
+  "name": "Sports",
+  "content": "Thể thao",
+  "createdAt": {
+    "$date": "2020-07-03T06:09:58.739Z"
+  },
+  "updatedAt": {
+    "$date": "2021-08-03T06:09:58.739Z"
+  }
+}]

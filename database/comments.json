@@ -1,0 +1,894 @@
+[{
+  "_id": {
+    "$oid": "64414d1c131d3f0c1aafc750"
+  },
+  "user_id": {
+    "$oid": "64433cdaed8a4dae107de993"
+  },
+  "video_id": {
+    "$oid": "642037f0356be831dc5edaea"
+  },
+  "content": "Chúc mọi người xem video vui vẻ !"
+},{
+  "_id": {
+    "$oid": "644160c076349fee313231e4"
+  },
+  "user_id": {
+    "$oid": "64433db5ed8a4dae107de996"
+  },
+  "video_id": {
+    "$oid": "642037f0356be831dc5edaea"
+  },
+  "content": "Hóng ra tập tiếp theo quá",
+  "createdAt": {
+    "$date": "2023-04-20T15:56:48.635Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T15:56:48.635Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6441610d1e641ae122fd872c"
+  },
+  "user_id": {
+    "$oid": "64433db5ed8a4dae107de996"
+  },
+  "video_id": {
+    "$oid": "64203800356be831dc5edaeb"
+  },
+  "content": "Hello tất cả mọi người",
+  "createdAt": {
+    "$date": "2023-04-20T15:58:05.971Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T15:58:05.971Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644161281e641ae122fd8735"
+  },
+  "user_id": {
+    "$oid": "64433e57ed8a4dae107de999"
+  },
+  "video_id": {
+    "$oid": "643f3b4eff9bfa51deeac84a"
+  },
+  "content": "Video hay quá, sau này đừng ra video nữa :>",
+  "createdAt": {
+    "$date": "2023-04-20T15:58:32.963Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T15:58:32.963Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6441615452a4525f6d530ac9"
+  },
+  "user_id": {
+    "$oid": "64433e57ed8a4dae107de999"
+  },
+  "video_id": {
+    "$oid": "6420380b356be831dc5edaec"
+  },
+  "content": "Tương tác tốt ạ",
+  "createdAt": {
+    "$date": "2023-04-20T15:59:16.972Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T15:59:16.972Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6441615752a4525f6d530acc"
+  },
+  "user_id": {
+    "$oid": "64433ef1ed8a4dae107de99c"
+  },
+  "video_id": {
+    "$oid": "6420380b356be831dc5edaec"
+  },
+  "content": "Hài vãi linh hồn",
+  "createdAt": {
+    "$date": "2023-04-20T15:59:19.641Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T15:59:19.641Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6441616252a4525f6d530adb"
+  },
+  "user_id": {
+    "$oid": "6443402eed8a4dae107de9a2"
+  },
+  "video_id": {
+    "$oid": "64203815356be831dc5edaed"
+  },
+  "content": "Drama hay quá, hít bổ phổi",
+  "createdAt": {
+    "$date": "2023-04-20T15:59:30.011Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T15:59:30.011Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416648c8b64e0743eafc4b"
+  },
+  "user_id": {
+    "$oid": "64434195ed8a4dae107de9a8"
+  },
+  "video_id": {
+    "$oid": "64203815356be831dc5edaed"
+  },
+  "content": "Phim hay quá",
+  "createdAt": {
+    "$date": "2023-04-20T16:20:24.393Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:20:24.393Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6441665ac8b64e0743eafc4e"
+  },
+  "user_id": {
+    "$oid": "64434195ed8a4dae107de9a8"
+  },
+  "video_id": {
+    "$oid": "6420382e356be831dc5edaee"
+  },
+  "content": "Nhạc chill quá",
+  "createdAt": {
+    "$date": "2023-04-20T16:20:42.818Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:20:42.818Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416661c8b64e0743eafc5d"
+  },
+  "user_id": {
+    "$oid": "6443402eed8a4dae107de9a2"
+  },
+  "video_id": {
+    "$oid": "6420382e356be831dc5edaee"
+  },
+  "content": "nhạc trung nghe cuốn thế",
+  "createdAt": {
+    "$date": "2023-04-20T16:20:49.966Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:20:49.966Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416675c8b64e0743eafc66"
+  },
+  "user_id": {
+    "$oid": "644346e4ed8a4dae107de9d1"
+  },
+  "video_id": {
+    "$oid": "6420387b356be831dc5edaef"
+  },
+  "content": "BlackPink in your area!",
+  "createdAt": {
+    "$date": "2023-04-20T16:21:09.061Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:21:09.061Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416679c8b64e0743eafc69"
+  },
+  "user_id": {
+    "$oid": "64434744ed8a4dae107de9d5"
+  },
+  "video_id": {
+    "$oid": "6420387b356be831dc5edaef"
+  },
+  "content": "LISA mãi đỉnh!!!",
+  "createdAt": {
+    "$date": "2023-04-20T16:21:13.609Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:21:13.609Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6441667bc8b64e0743eafc6c"
+  },
+  "user_id": {
+    "$oid": "644343d2ed8a4dae107de9bf"
+  },
+  "video_id": {
+    "$oid": "64203887356be831dc5edaf0"
+  },
+  "content": "Cảm động quá, muốn khóc luôn",
+  "createdAt": {
+    "$date": "2023-04-20T16:21:15.045Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:21:15.045Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6441667cc8b64e0743eafc6f"
+  },
+  "user_id": {
+    "$oid": "644344f6ed8a4dae107de9c5"
+  },
+  "video_id": {
+    "$oid": "64203887356be831dc5edaf0"
+  },
+  "content": "nghe chầm cảm",
+  "createdAt": {
+    "$date": "2023-04-20T16:21:16.690Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:21:16.690Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416684c8b64e0743eafc72"
+  },
+  "user_id": {
+    "$oid": "64434256ed8a4dae107de9ae"
+  },
+  "video_id": {
+    "$oid": "64203893356be831dc5edaf1"
+  },
+  "content": "nhạc hay quá",
+  "createdAt": {
+    "$date": "2023-04-20T16:21:24.187Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:21:24.187Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416686c8b64e0743eafc75"
+  },
+  "user_id": {
+    "$oid": "644343d2ed8a4dae107de9bf"
+  },
+  "video_id": {
+    "$oid": "64203893356be831dc5edaf1"
+  },
+  "content": "nhạc đỉnh, nghe muốn điếc lỗ tai",
+  "createdAt": {
+    "$date": "2023-04-20T16:21:26.957Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:21:26.957Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6441668ac8b64e0743eafc78"
+  },
+  "user_id": {
+    "$oid": "64434587ed8a4dae107de9c8"
+  },
+  "video_id": {
+    "$oid": "6420389d356be831dc5edaf2"
+  },
+  "content": "hello everyone",
+  "createdAt": {
+    "$date": "2023-04-20T16:21:30.259Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:21:30.259Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416691c8b64e0743eafc7b"
+  },
+  "user_id": {
+    "$oid": "64434687ed8a4dae107de9ce"
+  },
+  "video_id": {
+    "$oid": "6420389d356be831dc5edaf2"
+  },
+  "content": "your video helps a lot, thanks so much",
+  "createdAt": {
+    "$date": "2023-04-20T16:21:37.876Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:21:37.876Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416a55c8b64e0743eafd60"
+  },
+  "user_id": {
+    "$oid": "64434744ed8a4dae107de9d5"
+  },
+  "video_id": {
+    "$oid": "642038a7356be831dc5edaf3"
+  },
+  "content": "hài vãi :V",
+  "createdAt": {
+    "$date": "2023-04-20T16:37:41.905Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:37:41.905Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416b9e3d7e0115fd3f43bb"
+  },
+  "user_id": {
+    "$oid": "64434605ed8a4dae107de9cb"
+  },
+  "video_id": {
+    "$oid": "642038a7356be831dc5edaf3"
+  },
+  "content": "+1 tương tác",
+  "createdAt": {
+    "$date": "2023-04-20T16:43:10.528Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:43:10.528Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416ba13d7e0115fd3f43be"
+  },
+  "user_id": {
+    "$oid": "64433e57ed8a4dae107de999"
+  },
+  "video_id": {
+    "$oid": "64204024356be831dc5edb13"
+  },
+  "content": "nhìn mặc anh nó đần đần hài vãi",
+  "createdAt": {
+    "$date": "2023-04-20T16:43:13.080Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:43:13.080Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416ba63d7e0115fd3f43c1"
+  },
+  "user_id": {
+    "$oid": "64434195ed8a4dae107de9a8"
+  },
+  "video_id": {
+    "$oid": "64204024356be831dc5edb13"
+  },
+  "content": "nhóm này diễn cảnh hành động đỉnh của chóp",
+  "createdAt": {
+    "$date": "2023-04-20T16:43:18.111Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:43:18.111Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416c433d7e0115fd3f43c4"
+  },
+  "user_id": {
+    "$oid": "644347d7ed8a4dae107de9d8"
+  },
+  "video_id": {
+    "$oid": "64204031356be831dc5edb14"
+  },
+  "content": "thích coi thế giới động vật",
+  "createdAt": {
+    "$date": "2023-04-20T16:45:55.262Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:45:55.262Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416c443d7e0115fd3f43c7"
+  },
+  "user_id": {
+    "$oid": "64434687ed8a4dae107de9ce"
+  },
+  "video_id": {
+    "$oid": "64204031356be831dc5edb14"
+  },
+  "content": "nhìn con sói ghê quá mấy ba mấy má ơi",
+  "createdAt": {
+    "$date": "2023-04-20T16:45:56.089Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:45:56.089Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416c443d7e0115fd3f43ca"
+  },
+  "user_id": {
+    "$oid": "64434195ed8a4dae107de9a8"
+  },
+  "video_id": {
+    "$oid": "6420403c356be831dc5edb15"
+  },
+  "content": "zui chỗ nào? haiz chỗ nào?",
+  "createdAt": {
+    "$date": "2023-04-20T16:45:56.973Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:45:56.973Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416c453d7e0115fd3f43cd"
+  },
+  "user_id": {
+    "$oid": "644343d2ed8a4dae107de9bf"
+  },
+  "video_id": {
+    "$oid": "6420403c356be831dc5edb15"
+  },
+  "content": "rồi có zui dữ chưa ông zà",
+  "createdAt": {
+    "$date": "2023-04-20T16:45:57.782Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:45:57.782Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416c473d7e0115fd3f43d0"
+  },
+  "user_id": {
+    "$oid": "6443402eed8a4dae107de9a2"
+  },
+  "video_id": {
+    "$oid": "64204046356be831dc5edb16"
+  },
+  "content": "hóng clip",
+  "createdAt": {
+    "$date": "2023-04-20T16:45:59.718Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:45:59.718Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416c493d7e0115fd3f43d3"
+  },
+  "user_id": {
+    "$oid": "64434218ed8a4dae107de9ab"
+  },
+  "video_id": {
+    "$oid": "64204046356be831dc5edb16"
+  },
+  "content": "+1 như trên",
+  "createdAt": {
+    "$date": "2023-04-20T16:46:01.789Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:46:01.789Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416c4a3d7e0115fd3f43d6"
+  },
+  "user_id": {
+    "$oid": "64434444ed8a4dae107de9c2"
+  },
+  "video_id": {
+    "$oid": "6420404e356be831dc5edb17"
+  },
+  "content": "trời má hết hồn",
+  "createdAt": {
+    "$date": "2023-04-20T16:46:02.638Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:46:02.638Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416c4c3d7e0115fd3f43d9"
+  },
+  "user_id": {
+    "$oid": "64434587ed8a4dae107de9c8"
+  },
+  "video_id": {
+    "$oid": "6420404e356be831dc5edb17"
+  },
+  "content": "con ma kiểu ngạc nhiên chưa bà zà",
+  "createdAt": {
+    "$date": "2023-04-20T16:46:04.148Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:46:04.148Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416c4c3d7e0115fd3f43dc"
+  },
+  "user_id": {
+    "$oid": "64434744ed8a4dae107de9d5"
+  },
+  "video_id": {
+    "$oid": "6420407b356be831dc5edb19"
+  },
+  "content": "22222222222222222",
+  "createdAt": {
+    "$date": "2023-04-20T16:46:04.979Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:46:04.979Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "64416c4e3d7e0115fd3f43df"
+  },
+  "user_id": {
+    "$oid": "6443402eed8a4dae107de9a2"
+  },
+  "video_id": {
+    "$oid": "64204089356be831dc5edb1a"
+  },
+  "content": "thách Chipu cover bài này",
+  "createdAt": {
+    "$date": "2023-04-20T16:46:06.414Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-20T16:46:06.414Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644212f81675c1f785cd0ea4"
+  },
+  "user_id": {
+    "$oid": "64433ef1ed8a4dae107de99c"
+  },
+  "video_id": {
+    "$oid": "64204090356be831dc5edb1b"
+  },
+  "content": "hi",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:12.874Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:12.874Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644212fc1675c1f785cd0ea7"
+  },
+  "user_id": {
+    "$oid": "64433fb0ed8a4dae107de99f"
+  },
+  "video_id": {
+    "$oid": "6420409a356be831dc5edb1c"
+  },
+  "content": "video thật là bổ X",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:16.860Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:16.860Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644212ff1675c1f785cd0eaa"
+  },
+  "user_id": {
+    "$oid": "64434108ed8a4dae107de9a5"
+  },
+  "video_id": {
+    "$oid": "642040b0356be831dc5edb1d"
+  },
+  "content": "xem đã cái nư ghê",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:19.416Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:19.416Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644213011675c1f785cd0ead"
+  },
+  "user_id": {
+    "$oid": "6443432eed8a4dae107de9bc"
+  },
+  "video_id": {
+    "$oid": "642040b6356be831dc5edb1e"
+  },
+  "content": "comment đầu",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:21.294Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:21.294Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644213051675c1f785cd0eb0"
+  },
+  "user_id": {
+    "$oid": "64434444ed8a4dae107de9c2"
+  },
+  "video_id": {
+    "$oid": "642040bf356be831dc5edb1f"
+  },
+  "content": "cười tét nách",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644367a5828a6c89260d56eb"
+  },
+  "user_id": {
+    "$oid": "644344f6ed8a4dae107de9c5"
+  },
+  "video_id": {
+    "$oid": "642040c6356be831dc5edb20"
+  },
+  "content": "idol em hát hay quá",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644367a5828a6c89260d56ec"
+  },
+  "user_id": {
+    "$oid": "64434587ed8a4dae107de9c8"
+  },
+  "video_id": {
+    "$oid": "642040ce356be831dc5edb21"
+  },
+  "content": "xem xong hết dám đi xe bus buổi tối luôn",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644367a5828a6c89260d56ed"
+  },
+  "user_id": {
+    "$oid": "64434605ed8a4dae107de9cb"
+  },
+  "video_id": {
+    "$oid": "642040e1356be831dc5edb22"
+  },
+  "content": "hello",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644367a5828a6c89260d56ee"
+  },
+  "user_id": {
+    "$oid": "64434687ed8a4dae107de9ce"
+  },
+  "video_id": {
+    "$oid": "642040ea356be831dc5edb23"
+  },
+  "content": "cơn mưa ngang qua mang em đi xa yeah yeah",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644367a5828a6c89260d56ef"
+  },
+  "user_id": {
+    "$oid": "644346e4ed8a4dae107de9d1"
+  },
+  "video_id": {
+    "$oid": "642040f3356be831dc5edb24"
+  },
+  "content": "nghe nói bài này hot bên tiktok trung quốc lắm",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644367a5828a6c89260d56f0"
+  },
+  "user_id": {
+    "$oid": "64434744ed8a4dae107de9d5"
+  },
+  "video_id": {
+    "$oid": "642040fb356be831dc5edb25"
+  },
+  "content": "bổ X",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644367a5828a6c89260d56f1"
+  },
+  "user_id": {
+    "$oid": "644347d7ed8a4dae107de9d8"
+  },
+  "video_id": {
+    "$oid": "64204104356be831dc5edb26"
+  },
+  "content": "có chắc là ổn khum",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644367a5828a6c89260d56f2"
+  },
+  "user_id": {
+    "$oid": "64433cdaed8a4dae107de993"
+  },
+  "video_id": {
+    "$oid": "6420413c356be831dc5edb27"
+  },
+  "content": "=))))))))))))))))))))))))))",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644367a5828a6c89260d56f3"
+  },
+  "user_id": {
+    "$oid": "64433db5ed8a4dae107de996"
+  },
+  "video_id": {
+    "$oid": "64204147356be831dc5edb28"
+  },
+  "content": "là vì anh ghen ghen ghen mà, là vì anh đang yêu thôi thôi thôi mà",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644367a5828a6c89260d56f4"
+  },
+  "user_id": {
+    "$oid": "64433e57ed8a4dae107de999"
+  },
+  "video_id": {
+    "$oid": "64204155356be831dc5edb29"
+  },
+  "content": "trời má tối rồi xem không dám ngủ luôn",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644367a5828a6c89260d56f5"
+  },
+  "user_id": {
+    "$oid": "64433ef1ed8a4dae107de99c"
+  },
+  "video_id": {
+    "$oid": "64204161356be831dc5edb2a"
+  },
+  "content": "ước gì VN cũng làm phim lịch sử đc zậy",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644367a5828a6c89260d56f6"
+  },
+  "user_id": {
+    "$oid": "64433fb0ed8a4dae107de99f"
+  },
+  "video_id": {
+    "$oid": "64204171356be831dc5edb2b"
+  },
+  "content": "cảm động quá hmu hmu",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "644367a5828a6c89260d56f7"
+  },
+  "user_id": {
+    "$oid": "6443402eed8a4dae107de9a2"
+  },
+  "video_id": {
+    "$oid": "6420417a356be831dc5edb2c"
+  },
+  "content": "ủa MU chưa vô hang à?",
+  "createdAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "updatedAt": {
+    "$date": "2023-04-21T04:37:25.335Z"
+  },
+  "__v": 0
+}]
