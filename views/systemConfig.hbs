@@ -1,0 +1,101 @@
+<div class="row justify-content-center">
+    <div class="col-sm-10 col-md-8 col-lg-6 col-xl-4">
+        {{!-- header --}}
+        <div class=" mb-4">
+            <h3 class="text-center fw-bold">THIẾT LẬP HỆ THỐNG</h3>
+        </div>
+        {{!-- system config form --}}
+        <div class="mb-4 bg-white border">
+            <form class="p-3">
+                <div class="mb-3">
+                    <label for="max-size" class="form-label">Kích thước tối đa của video (MB):</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-aspect-ratio-fill"></i>
+                        </span>
+                        <input type="number" id="max-size" class="form-control" value="{{max_size}}" placeholder="Kích thước tối đa của video">
+                    </div>
+                </div>       
+                <div class="mb-3">
+                    <label for="max-length" class="form-label">Thời lượng tối đa của video (min):</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-clock-fill"></i>
+                        </span>
+                        <input type="number" id="max-length" class="form-control" value="{{max_length}}" placeholder="Thời lượng tối đa của video">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="max-quantity" class="form-label">Số lượng video tối đa:</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <i class="bi bi-record-btn-fill"></i>
+                        </span>
+                        <input type="number" id="max-quantity" class="form-control" value="{{max_quantity}}" placeholder="Số lượng video tối đa">
+                    </div>
+                </div>
+                <div class="mb-3 text-center">
+                    <button id="save-btn" class="btn btn-primary px-5" data-bs-toggle="modal" data-bs-target="#update-modal">Lưu</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            {{!-- message --}}
+            <div id="message" class="mb-3 text-center"></div>
+        </div>
+    </div>
+</div>
+
+<!-- update modal -->
+<div class="modal fade" id="update-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Cập nhật hệ thống</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Bạn có chắc muốn thay đổi thiết lập hệ thống không ?
+            </div>
+            <div class="modal-footer">
+                <button id="update-confirm" class="btn btn-primary">Có</button>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Không</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).on('click', '#save-btn', function(event) {
+        event.preventDefault()
+    })
+
+    $(document).on('click', '#update-confirm', function() {
+        $.ajax({
+            url: '/admin/system-config',
+            method: 'POST',
+            data: {
+                max_size: $('#max-size').val(),
+                max_length: $('#max-length').val(),
+                max_quantity: $('#max-quantity').val()
+            }
+        })
+        .done(res => {
+            if (res.success) {
+                displayMessage('success', res.message)
+            }
+            else {
+                displayMessage('danger', res.message)
+            }
+            $('.btn-close').click()
+        })
+    })
+
+    function displayMessage(type, message) {
+        let html = `<div class="alert alert-${type} p-2">${message}</div>`
+        $('#message').html(html)
+        setTimeout(function() {
+            $('.alert').hide()
+        }, 3000)
+    }
+</script>

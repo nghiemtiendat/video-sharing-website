@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Video</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        header {
+            background-color: #282828;
+            min-height: 10%;
+        }
+
+        .main {
+            min-height: 90%;
+            background-color: #f7eeda;
+        }
+
+        .othervideo .row {
+            height: auto;
+            width: auto;
+            border-radius: 50px 50px 120px 50px;
+            display: flex;
+            align-items: center;
+            padding: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #EEE3CB;
+        }
+
+        .nav-link:hover {
+            background-color: #e1e1e1;
+        }
+
+        .groupbackground .border {
+            height: 45%;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .avatar {
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+        }
+
+        .avatar .name {
+            padding: auto;
+            margin: 10px;
+        }
+
+        .groupbackground .row {
+            width: auto;
+            border-radius: 50px 50px 120px 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .description {
+            width: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        #rcorners1 {
+            border-radius: 25px;
+            background: #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        .footer {
+            background-color: #EEE3CB;
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="p-0 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center col-9 col-lg-auto mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <h2 class="text-warning text-center p-3">
+                        <i class="bi bi-play-circle"></i>
+                        Shared
+                    </h2>
+                </a>
+
+                <ul class="nav d-none d-lg-block col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                </ul>
+
+                <ul class="nav col-3 col-lg-auto me-lg-0 mb-2 justify-content-center mb-md-0">
+                    <li>
+                        <a href="/user/management" class="btn btn-light position-relative me-2"><i
+                                class="bi bi-cloud-arrow-up-fill"></i></a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-light position-relative me-2" title="Thông báo">
+                            <i class="bi bi-bell"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+                
+                <form class="col-10 col-lg-auto mb-3 mb-lg-0 me-3 d-flex" method="GET" action="/user/search">
+                    <input type="search" class="form-control me-lg-1" placeholder="Search..." aria-label="Search" name="q">
+                    <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+                <div class="dropdown text-end mb-3 mb-lg-0">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src={{userOnline.avatar}} alt="avatar" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="/user/profile">Hồ sơ</a></li>
+                        <li><a class="dropdown-item" href="/user/video-manager">Quản lý video</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="/logout">Đăng xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="navbar">
+            <div class="row">
+                <div class="avatar m-3">
+                    <img src={{user.avatar}} width="100px" class="rounded-circle border">
+                    <h4>&nbsp;&nbsp;{{user.full_name}}</h4>
+                </div>
+            </div>
+        </div>
+        <div class="groupbackground">
+            <div class="row m-0 p-0">
+                {{#each video}}
+                <div class="col-md-6 col-lg-4 col-xl-3 p-5">
+                    <div class="card bg-secondary text-white" onclick="location.href='/user/watchvideo?id={{this._id}}'">
+                        <div class="ratio ratio-4x3">
+                            <img src="{{this.thumbnail}}" width="1424" height="652">
+                        </div>
+                        <div class="card-body">
+                            <h6 class="card-title">{{VideoTitle this.title}}</h6>
+                            <p>{{this.user_name}}</p>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        {{!-- header --}}
+        <div class=" mb-4">
+            <h3 class="text-center fw-bold">KIỂM DUYỆT VIDEO</h3>
+        </div>
+        {{!-- search --}}
+        <div class="mb-4">
+            <div class="input-group">
+                <span class="input-group-text">
+                    <i class="bi bi-search"></i>
+                </span>
+                <input type="text" id="search" class="form-control" placeholder="Tìm kiếm video" onkeyup="searchVideo()">
+            </div>
+        </div>
+        {{!-- video table --}}
+        <div class="mb-4 overflow-auto" style="max-height: 480px">
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th class="d-none">ID</th>
+                        <th class="text-center">Người đăng</th>
+                        <th class="text-center">Chuyên mục</th>
+                        <th class="text-center">Ngày tạo</th>
+                        <th class="text-center">Ngày cập nhật</th>
+                        <th class="text-center">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each videos}}
+                    <tr>
+                        <td class="d-none">{{this._id}}</td>
+                        <td>{{this.user_name}}</td>
+                        <td>{{this.category_name}}</td>
+                        <td>{{DateFormat this.createdAt}}</td>
+                        <td>{{DateFormat this.updatedAt}}</td>
+                        <td class="text-center">
+                            <button class="btn btn-success view-btn" data-bs-toggle="modal" data-bs-target="#view-modal"><i class="bi bi-check2-circle"></i> Duyệt</button>
+                        </td>
+                    </tr>
+                    {{else}}
+                    <tr>
+                        <td colspan="6">Không có dữ liệu hiển thị</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {{!-- message --}}
+    <div id="message" class="col-sm-9 col-md-7 col-lg-5 text-center"></div>
+</div>
+
+<!-- view modal -->
+<div class="modal fade" id="view-modal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Duyệt video</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3 ratio ratio-16x9">
+                    <iframe id="view-url" allowfullscreen></iframe>
+                </div>
+                <div class="mb-3 fw-bold">
+                    Thông tin video:
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">User</span>
+                    <input type="text" id="view-user" class="form-control">
+                    <span class="input-group-text">Category</span>
+                    <input type="text" id="view-category" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Private</span>
+                    <select id="view-private" class="form-select">
+                        <option value="true">True</option>
+                        <option value="false">False</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Title</span>
+                    <input type="text" id="view-title" class="form-control">
+                </div>   
+                <div class="input-group">
+                    <span class="input-group-text">Description</span>
+                    <textarea id="view-description" class="form-control"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="accept-btn" class="btn btn-success">Chấp nhận</button>
+                <button id="reject-btn" class="btn btn-secondary">Xóa</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).on('click', '.view-btn', function() {
+        let curr_row = $(this).parent().parent()
+        let video_id = curr_row.children().eq(0).text()
+        console.log(video_id)
+        $.ajax({
+            url: '/admin/check-video/' + video_id,
+            type: 'GET'
+        })
+        .done(res => {
+            if (res.success) {
+                let video = res.data
+                $('#view-url').attr('src', video.url)
+                $('#view-video-id').val(video.video_id)
+                $('#view-user').val(video.user_name)
+                $('#view-category').val(video.category_name)
+                $('#view-private').val(video.is_private.toString())
+                $('#view-title').val(video.title)
+                $('#view-description').val(video.description)
+
+                $('#accept-btn').off().on('click', { curr_row, video_id }, function() {
+                    $.ajax({
+                        url: '/admin/check-video/' + video_id,
+                        method: 'PUT'
+                    })
+                    .done(res => {
+                        if (res.success) {
+                            curr_row.remove()
+                            displayMessage('success', res.message)
+                        }
+                        else {
+                            displayMessage('danger', res.message)
+                        }
+                        $('.btn-close').click()
+                    })
+                })
+
+                $('#reject-btn').off().on('click', { curr_row, video_id }, function() {
+                    $.ajax({
+                        url: '/admin/check-video/' + video_id,
+                        method: 'DELETE'
+                    })
+                    .done(res => {
+                        if (res.success) {
+                            curr_row.remove()
+                            displayMessage('success', res.message)
+                        }
+                        else {
+                            displayMessage('danger', res.message)
+                        }
+                        $('.btn-close').click()
+                    })
+                })
+            }
+            else {
+                displayMessage('danger', res.message)
+                $('.btn-close').click()
+            }
+        })
+    })
+
+    function displayMessage(type, message) {
+        var html = `
+            <div class="alert alert-${type} p-2">
+                ${message}
+            </div>`;
+        $("#message").html(html);
+        setTimeout(function() {
+            $(".alert").hide();
+        }, 3000);
+    }
+
+    function searchVideo() {
+        var keyword = $("#search").val().toLowerCase();
+        var tr = $("tbody").children();
+        for(var i = 0; i < tr.length; i++) {
+            var text = "";
+            var td = tr.eq(i).children();
+            for (var j = 1; j < td.length - 1; j++) {
+                text += td.eq(j).text();
+            }
+            if (text.toLowerCase().indexOf(keyword) > -1) {
+                tr.eq(i).css("display", "");
+            }
+            else {
+                tr.eq(i).css("display", "none");
+            }
+        }
+    }
+</script>

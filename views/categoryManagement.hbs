@@ -1,0 +1,266 @@
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        {{!-- header --}}
+        <div class=" mb-4">
+            <h3 class="text-center fw-bold">QUẢN LÝ CHUYÊN MỤC</h3>
+        </div>
+        
+        <div class="row justify-content-between mb-4">
+            {{!-- add new category --}}
+            <div class="col-4">
+                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#add-modal">
+                    <i class="bi bi-folder-plus"></i> Thêm mới
+                </button>
+            </div>
+            {{!-- search --}}
+            <div class="col-8">
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <input type="text" id="search" class="form-control" placeholder="Tìm kiếm chuyên mục" onkeyup="searchCategory()">
+                </div>
+            </div>
+        </div>
+        
+        {{!-- categories table --}}
+        <div class="mb-4 overflow-auto border" style="max-height: 480px">
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th class="d-none">ID</th>
+                        <th class="text-center">Tên chuyên mục</th>
+                        <th class="text-center">Nội dung</th>
+                        <th class="text-center">Ngày tạo</th>
+                        <th class="text-center">Ngày cập nhật</th>
+                        <th class="text-center">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each categories}}
+                    <tr>
+                        <td class="d-none">{{_id}}</td>
+                        <td>{{name}}</td>
+                        <td>{{content}}</td>
+                        <td>{{DateFormat createdAt}}</td>
+                        <td>{{DateFormat updatedAt}}</td>
+                        <td class="text-center">
+                            <button class="btn btn-danger delete-btn" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i> Xóa</button>
+                            <button class="btn btn-primary update-btn" data-bs-toggle="modal" data-bs-target="#update-modal"><i class="bi bi-pencil"></i> Sửa</button>
+                        </td>
+                    </tr>
+                    {{else}}
+                    <tr>
+                        <td colspan="6">Không có dữ liệu hiển thị</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {{!-- message --}}
+    <div id="message" class="col-sm-9 col-md-7 col-lg-5 text-center"></div>
+</div>
+
+<!-- add modal -->
+<div class="modal fade" id="add-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Thêm chuyên mục</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>     
+                    <div class="mb-3">
+                        <label for="add-name" class="form-label">Tên chuyên mục:</label>
+                        <input type="text" id="add-name" class="form-control" placeholder="Tên chuyên mục">
+                    </div>
+                    <div class="mb-3">
+                        <label for="add-content" class="form-label">Nội dung:</label>
+                        <textarea id="add-content" class="form-control" placeholder="Nội dung chuyên mục" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="add-confirm" class="btn btn-success">Thêm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- delete modal -->
+<div class="modal fade" id="delete-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Xóa chuyên mục</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Bạn có chắc muốn xóa chuyên mục <strong id="delete-name"></strong> không ?
+            </div>
+            <div class="modal-footer">
+                <button id="delete-confirm" class="btn btn-danger">Xóa</button>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Không</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- update modal -->
+<div class="modal fade" id="update-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Cập nhật chuyên mục</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>     
+                    <div class="mb-3">
+                        <label for="update-name" class="form-label">Tên chuyên mục:</label>
+                        <input type="text" id="update-name" class="form-control" placeholder="Tên chuyên mục">
+                    </div>
+                    <div class="mb-3">
+                        <label for="update-content" class="form-label">Nội dung:</label>
+                        <textarea id="update-content" class="form-control" placeholder="Nội dung chuyên mục" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="update-confirm" class="btn btn-primary">Lưu</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).on('click', '#add-confirm', function() {
+        let category_id = $('#add-category-id')
+        let name = $('#add-name')
+        let content = $('#add-content')
+        $.ajax({
+            url: '/admin/category-management',
+            type: 'POST',
+            data: {
+                category_id: category_id.val(),
+                name: name.val(),
+                content: content.val()
+            }
+        })
+        .done(res => {
+            if (res.success) {
+                insertCategory(res.data);
+                displayMessage('success', res.message)
+            }
+            else {
+                displayMessage('danger', res.message)
+            }
+            category_id.val('')
+            name.val('')
+            content.val('')
+            $('.btn-close').click()
+        })
+    })
+
+    $(document).on('click', '.delete-btn', function() {
+        let curr_row = $(this).parent().parent()
+        let category_id = curr_row.children().eq(0).text()
+        let category_name = curr_row.children().eq(1).text()
+        $('#delete-name').text(category_name)
+        $('#delete-confirm').off().on('click', { curr_row, category_id }, function() {
+            $.ajax({
+                url: '/admin/category-management/' + category_id,
+                type: 'DELETE'
+            })
+            .done(res => {
+                if (res.success) {
+                    curr_row.remove()
+                    displayMessage('success', res.message)
+                }
+                else {
+                    displayMessage('danger', res.message)
+                }
+                $('.btn-close').click()
+            })
+        })
+    })
+
+    $(document).on('click', '.update-btn', function() {
+        let curr_row = $(this).parent().parent()
+        let category_id = curr_row.children().eq(0)
+        let name = curr_row.children().eq(1)
+        let content = curr_row.children().eq(2)
+        let updated_at = curr_row.children().eq(4)
+
+        $('#update-name').val(name.text())
+        $('#update-content').val(content.text())
+
+        $('#update-confirm').off().on('click', { category_id, name, content, updated_at }, function() {
+            $.ajax({
+                url: '/admin/category-management/' + category_id.text(),
+                type: 'PUT',
+                data: {
+                    name: $('#update-name').val(),
+                    content: $('#update-content').val()
+                }
+            })
+            .done(res => {
+                if (res.success) {
+                    let category = res.data
+                    name.text(category.name)
+                    content.text(category.content)
+                    updated_at.text(new Date(category.updatedAt).toLocaleDateString('en-Gb'))
+                    displayMessage('success', res.message)
+                }
+                else {
+                    displayMessage('danger', res.message)
+                }
+                $('.btn-close').click()
+            })
+        })
+    })
+
+    function displayMessage(type, message) {
+        let html = `<div class="alert alert-${type} p-2">${message}</div>`
+        $('#message').html(html)
+        setTimeout(function() {
+            $('.alert').hide()
+        }, 3000)
+    }
+
+    function insertCategory(category) {
+        let html = `
+            <tr>
+                <td class="d-none">${category._id}</td>
+                <td>${category.name}</td>
+                <td>${category.content}</td>
+                <td>${new Date(category.createdAt).toLocaleDateString('en-Gb')}</td>
+                <td>${new Date(category.updatedAt).toLocaleDateString('en-Gb')}</td>
+                <td class="text-center">
+                    <button class="btn btn-danger delete-btn" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i> Xóa</button>
+                    <button class="btn btn-primary update-btn" data-bs-toggle="modal" data-bs-target="#update-modal"><i class="bi bi-pencil"></i> Sửa</button>
+                </td>
+            </tr>`
+        $('tbody').append(html)
+    }
+
+    function searchCategory() {
+        let keyword = $('#search').val().toLowerCase()
+        let tr = $('tbody').children()
+        for(let i = 0; i < tr.length; i++) {
+            let text = ''
+            let td = tr.eq(i).children()
+            for (let j = 1; j < td.length - 1; j++) {
+                text += td.eq(j).text()
+            }
+            if (text.toLowerCase().indexOf(keyword) > -1) {
+                tr.eq(i).css('display', '')
+            }
+            else {
+                tr.eq(i).css('display', 'none')
+            }
+        }
+    }
+</script>

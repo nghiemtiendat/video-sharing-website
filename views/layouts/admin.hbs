@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    {{!-- bootstrap --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    {{!-- bootstrap icons --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    {{!-- jquery --}}
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <style>
+        #side-bar {
+            position: sticky;
+            height: 100vh;
+            top: 0;
+        }
+        .nav-item:hover {
+            background-color: rgb(120, 108, 83);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            {{!-- side bar --}}
+            <div id="side-bar" class="d-none d-md-block col-md-3 col-lg-2 bg-dark p-2">
+                <h2 class="text-warning text-center p-3">
+                    <i class="bi bi-play-circle"></i>
+                    Shared
+                </h2>
+                <hr class="text-white">
+                <ul class=" navbar-nav">
+                    <li class="nav-item p-2">
+                        <a href="/admin" class="nav-link text-white p-0">
+                            <i class="bi bi-house-gear"></i>&nbsp;&nbsp;
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="/admin/user-management" class="nav-link text-white p-0">
+                            <i class="bi bi-person-circle"></i>&nbsp;&nbsp;
+                            Quản lý người dùng
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="/admin/category-management" class="nav-link text-white p-0">
+                            <i class="bi bi-card-list"></i>&nbsp;&nbsp;
+                            Quản lý chuyên mục
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="/admin/video-management" class="nav-link text-white p-0">
+                            <i class="bi bi-film"></i>&nbsp;&nbsp;
+                            Quản lý video
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="/admin/check-video" class="nav-link text-white p-0">
+                            <i class="bi bi-calendar2-check-fill"></i>&nbsp;&nbsp;
+                            Kiểm duyệt video
+                        </a>
+                    </li>
+                    <li class="nav-item p-2">
+                        <a href="/admin/system-config" class="nav-link text-white p-0">
+                            <i class="bi bi-gear-fill"></i>&nbsp;&nbsp;
+                            Thiết lập hệ thống
+                        </a>
+                    </li>
+                </ul>
+                <hr class="text-white">
+            </div>
+            {{!-- main --}}
+            <div class="bg-light col-md-9 col-lg-10 p-0">
+                <div class="bg-primary p-2">
+                    <div class="row justify-content-between">
+                        <div class="col-5 fw-bold text-white">
+                            Administrator
+                        </div>
+                        <div class="col-7 text-end text-white">
+                            Xin chào <a class="dropdown-toggle text-decoration-none text-white fw-bold" data-bs-toggle="dropdown" data-bs-target="#menu">{{username}}</a>
+                                <ul id="menu" class="dropdown-menu">
+                                    <a href="/logout" class="dropdown-item">
+                                        <i class="bi bi-box-arrow-right"></i>
+                                        &nbsp;Đăng xuất
+                                    </a>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2">
+                    {{{body}}}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

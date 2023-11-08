@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Video</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        header {
+            background-color: #282828;
+            min-height: 10%;
+        }
+
+        .main {
+            min-height: 90%;
+            background-color: #f7eeda;
+        }
+
+        .othervideo .row {
+            height: auto;
+            width: auto;
+        }
+
+        .navbar {
+            width: 100%;
+        }
+
+        .groupbackground .border {
+            height: 45%;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .avatar {
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+        }
+
+        .avatar .name {
+            padding: auto;
+            margin: 10px;
+        }
+
+        .description {
+            width: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="p-0 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center col-9 col-lg-auto mb-2 mb-lg-0 text-dark text-decoration-none">
+                    <h2 class="text-warning text-center p-3">
+                        <i class="bi bi-play-circle"></i>
+                        Shared
+                    </h2>
+                </a>
+
+                <ul class="nav d-none d-lg-block col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                </ul>
+
+                <ul class="nav col-3 col-lg-auto me-lg-0 mb-2 justify-content-center mb-md-0">
+                    <li>
+                        <a href="/user/management" class="btn btn-light position-relative me-2"><i
+                                class="bi bi-cloud-arrow-up-fill"></i></a>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-light position-relative me-2" title="Thông báo">
+                            <i class="bi bi-bell"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+                
+                <form class="col-10 col-lg-auto mb-3 mb-lg-0 me-3 d-flex" method="GET" action="/user/search">
+                    <input type="search" class="form-control me-lg-1" placeholder="Search..." aria-label="Search" name="q">
+                    <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+                <div class="dropdown text-end mb-3 mb-lg-0">
+                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src={{userOnline.avatar}} alt="avatar" width="32" height="32" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                        <li><a class="dropdown-item" href="/user/profile">Hồ sơ</a></li>
+                        <li><a class="dropdown-item" href="/user/video-manager">Quản lý video</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="/logout">Đăng xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="groupbackground">
+            <div class="row align-items-center pt-5 px-2">
+                <div class="col-lg-8 mx-auto">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="1920" height="1080" src="{{watchVideo.url}}" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="py-2">
+                        <h3 class="fw-bold">{{watchVideo.title}}</h3>
+                        <p><b>Date:</b> {{DateFormat watchVideo.createdAt}}</p>
+                        <p><b>Author:</b> <a class="text-decoration-none" href="/user/watchuser?id={{watchVideo.user_id}}">{{watchVideo.user_name}}</a></p>
+                        <p><b>Category:</b> {{watchVideo.category_name}}</p>
+                        <p><b>Description:</b> {{watchVideo.description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="othervideo">
+            <div class="row p-2">
+                    {{#if otherVideo}}
+                    {{#each otherVideo}}
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-5">
+                        <div class="card bg-secondary text-white" onclick="location.href='/user/watchvideo?id={{this._id}}'">
+                            <div class="ratio ratio-4x3">
+                                <img src="{{this.thumbnail}}" width="1424" height="652">
+                            </div>
+                            <div class="card-body">
+                                <h6 class="card-title">{{VideoTitle this.title}}</h6>
+                                <p class="card-text">{{this.user_name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                    {{/if}}
+            </div>
+        </div>
+        <div class="row justify-content-center py-5 px-1" style="background-color: #EEE3CB;">
+            <div class="col-lg-10">
+                <p class="h3">Bình luận</p>
+                <div id="comment-list" class="overflow-auto p-2" style="max-height: 500px;">
+                    {{#if userOnline}}
+                    <div class="bg-light rounded-3 border mx-lg-3 mx-1 my-3 py-2 px-3">
+                        <div class="input-group">
+                            <span class="input-text">
+                                <img class="rounded-circle" src="{{userOnline.avatar}}" style="max-width: 60px">&nbsp;
+                                <span class="text-primary fw-bold">{{userOnline.full_name}}</span>:&nbsp;
+                            </span>
+                            <input type="text" class="form-control rounded my-3" id="comment">
+                            <button class="btn btn-primary my-3 px-3" id="send">Send</i></button>
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{#each comments}}
+                    <div class="bg-light rounded-3 border mx-lg-3 mx-1 my-3 py-2 px-3">
+                        <img class="rounded-circle" src="{{avatar}}" style="max-width: 60px">&nbsp;
+                        <span class="text-primary fw-bold">{{user_name}}</span>:&nbsp;
+                        {{content}}
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<script>
+    $('#send').on('click', function() {
+        $.ajax('/user/comment', {
+            type: 'POST',
+            data: {
+                user_id: "{{userOnline._id}}",
+                video_id: "{{watchVideo._id}}",
+                content: $("#comment").val()
+            }
+        })
+        .then(res => {
+            if (res.success) {
+                let html = `
+                    <div class="bg-light rounded-3 border m-3 py-2 px-3">
+                        <img class="rounded-circle" src="{{userOnline.avatar}}" style="max-width: 60px">&nbsp;
+                        <span class="text-primary fw-bold">{{userOnline.full_name}}</span>:&nbsp;
+                        ${$("#comment").val()}
+                    </div>`
+                $('#comment-list').append(html)
+                $("#comment").val('')
+            }
+        })
+    })
+</script>
+
+</html>

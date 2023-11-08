@@ -1,0 +1,295 @@
+<style>
+    #view-avatar {
+        max-width: 150px;
+        max-height: 150px;
+    }
+</style>
+
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        {{!-- header --}}
+        <div class="mb-4">
+            <h3 class="text-center fw-bold">QUẢN LÝ NGƯỜI DÙNG</h3>
+        </div>
+        <div class="row justify-content-center mb-4">
+            {{!-- filter --}}
+            <div class="col-4">
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="bi bi-funnel"></i>
+                    </span>
+                    <select id="filter" class="form-select" onchange="filterUser()">
+                        <option value="0">Hiện tất cả</option>
+                        <option value="1">Active User</option>
+                        <option value="2">Inactive User</option>
+                    </select>
+                </div>
+            </div>
+            {{!-- search --}}
+            <div class="col-8">
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <input type="text" id="search" class="form-control" placeholder="Tìm kiếm user" onkeyup="searchUser()">
+                </div>
+            </div>
+        </div>
+        {{!-- user table --}}
+        <div class="mb-4 overflow-auto border" style="max-height: 480px">
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th class="d-none">ID</th>
+                        <th class="text-center">Họ tên</th>
+                        <th class="text-center">Ngày tạo</th>
+                        <th class="text-center">Ngày cập nhật</th>
+                        <th class="text-center">Active</th>
+                        <th class="text-center">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each users}}
+                    <tr>
+                        <td class="d-none">{{_id}}</td>
+                        <td>{{full_name}}</td>
+                        <td>{{DateFormat createdAt}}</td>
+                        <td>{{DateFormat updatedAt}}</td>
+                        <td class="text-center">{{{BoolCheck is_active}}}</td>
+                        <td class="text-center">
+                            <button class="btn btn-warning view-btn" data-bs-toggle="modal" data-bs-target="#view-modal"><i class="bi bi-eye-fill"></i> Xem</button>
+                            <button class="btn btn-danger delete-btn" data-bs-toggle="modal" data-bs-target="#delete-modal"><i class="bi bi-trash3"></i> Xóa</button>
+                        </td>
+                    </tr>
+                    {{else}}
+                    <tr>
+                        <td colspan="6">Không có dữ liệu hiển thị</td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    {{!-- message --}}
+    <div id="message" class="col-sm-9 col-md-7 col-lg-5 text-center"></div>
+</div>
+
+<!-- view modal -->
+<div class="modal fade" id="view-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Thông tin người dùng</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3 text-center">
+                    <img id="view-avatar" class="rounded-circle" alt="user avatar">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Họ tên</span>
+                    <input type="text" id="view-full-name" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Tuổi</span>
+                    <input type="number" id="view-age" class="form-control">
+                    <span class="input-group-text">Giới tính</span>
+                    <select id="view-gender" class="form-select">
+                        <option value="Male">Nam</option>
+                        <option value="Female">Nữ</option>
+                        <option value="Other">Khác</option>
+                    </select>
+                    <span class="input-group-text">Active</span>
+                    <select id="view-active" class="form-select">
+                        <option value="true">True</option>
+                        <option value="false">False</option>
+                    </select>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Email</span>
+                    <input type="text" id="view-email" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">SĐT</span>
+                    <input type="text" id="view-phone-number" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Địa chỉ</span>
+                    <input type="text" id="view-address" class="form-control">
+                </div>
+            </div>
+            <div id="view-modal-footer" class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- delete modal -->
+<div class="modal fade" id="delete-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Xóa người dùng</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Bạn có chắc muốn xóa người dùng <strong id="delete-full-name"></strong> không ?
+            </div>
+            <div class="modal-footer">
+                <button id="delete-confirm" class="btn btn-danger">Xóa</button>
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Không</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).on('click', '.view-btn', function() {
+        let curr_row = $(this).parent().parent()
+        let user_id = curr_row.children().eq(0).text()
+        $.ajax({
+            url: '/admin/user-management/' + user_id,
+            type: 'GET'
+        })
+        .done(res => {
+            if (res.success) {
+                let user = res.data
+                $('#view-avatar').attr('src', user.avatar)
+                $('#view-full-name').val(user.full_name)
+                $('#view-age').val(user.age)
+                $('#view-gender').val(user.gender)
+                $('#view-active').val(user.is_active.toString())
+                $('#view-email').val(user.email)
+                $('#view-phone-number').val(user.phone_number)
+                $('#view-address').val(user.address)
+                if (user.is_active) {
+                    $('#view-modal-footer').html('<button id="inactive-btn" class="btn btn-secondary">Khóa người dùng</button>')
+                }
+                else {
+                    $('#view-modal-footer').html('<button id="active-btn" class="btn btn-warning">Mở khóa</button>')
+                }
+                $('#active-btn').on('click' , { curr_row, user_id }, function() {
+                    console.log(user_id)
+                    $.ajax({
+                        url: '/admin/user-management/' + user_id,
+                        method: 'PUT',
+                        data: {
+                            is_active: true
+                        }
+                    })
+                    .done(res => {
+                        if (res.success) {
+                            curr_row.children().eq(3).text(new Date().toLocaleDateString('en-Gb'))
+                            curr_row.children().eq(4).html('<i class="bi bi-check-lg"></i>')
+                            displayMessage('success', res.message)
+                        }
+                        else {
+                            displayMessage('danger', res.message)
+                        }
+                        $('.btn-close').click()
+                    })
+                })
+                $('#inactive-btn').on('click', { curr_row, user_id }, function() {
+                    $.ajax({
+                        url: '/admin/user-management/' + user_id,
+                        method: 'PUT',
+                        data: {
+                            is_active: false
+                        }
+                    })
+                    .done(function(res) {
+                        if (res.success) {
+                            curr_row.children().eq(3).text(new Date().toLocaleDateString('en-Gb'))
+                            curr_row.children().eq(4).html('')
+                            displayMessage('success', res.message)
+                        }
+                        else {
+                            displayMessage('danger', res.message)
+                        }
+                        $('.btn-close').click()
+                    })
+                })
+            }
+            else {
+                displayMessage('danger', res.message)
+                $('.btn-close').click()
+            }
+        })
+    })
+
+    $(document).on('click', '.delete-btn', function() {
+        let curr_row = $(this).parent().parent()
+        let user_id = curr_row.children().eq(0).text()
+        let user_name = curr_row.children().eq(1).text()
+        $('#delete-full-name').text(user_name)
+        $('#delete-confirm').off().on('click', { curr_row, user_id }, function() {
+            $.ajax({
+                url: '/admin/user-management/' + user_id,
+                type: 'DELETE'
+            })
+            .done(res => {
+                if (res.success) {
+                    curr_row.remove()
+                    displayMessage('success', res.message)
+                }
+                else {
+                    displayMessage('danger', res.message)
+                }
+                $('.btn-close').click()
+            })
+        })
+    })
+
+    function displayMessage(type, message) {
+        let html = `<div class="alert alert-${type} p-2">${message}</div>`
+        $('#message').html(html)
+        setTimeout(function() {
+            $('.alert').hide()
+        }, 3000)
+    }
+
+    function searchUser() {
+        let keyword = $('#search').val().toLowerCase()
+        let tr = $('tbody').children();
+        for(let i = 0; i < tr.length; i++) {
+            let text = ''
+            let td = tr.eq(i).children()
+            for (let j = 1; j < td.length - 2; j++) {
+                text += td.eq(j).text()
+            }
+            if (text.toLowerCase().indexOf(keyword) > -1) {
+                tr.eq(i).css('display', '')
+            }
+            else {
+                tr.eq(i).css('display', 'none')
+            }
+        }
+    }
+
+    function filterUser() {
+        let filter = $('#filter').val()
+        let tr = $('tbody').children()
+        for(let i = 0; i < tr.length; i++) {
+            let td = tr.eq(i).children().eq(4).html()
+            if (filter == 0) {
+                tr.eq(i).css('display', '')
+            }
+            else if (filter == 1) {
+                if (td) {
+                    tr.eq(i).css('display', '')
+                }
+                else {
+                    tr.eq(i).css('display', 'none')
+                }
+            }
+            else {
+                if (td) {
+                    tr.eq(i).css('display', 'none')
+                }
+                else {
+                    tr.eq(i).css('display', '')
+                }
+            }
+        }
+    }
+</script>
